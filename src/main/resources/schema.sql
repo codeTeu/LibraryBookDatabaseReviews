@@ -19,13 +19,19 @@ alter table reviews
   references books (id);
 
 insert into books (title, author)
-values ('The 7 Habits of Highly Effective People', 'Stephen R. Covey');
+values ('The Intelligent Investor', 'Benjamin Graham');
  
 insert into books (title, author)
-values ('The Prince', 'Niccolo Machiavelli'); 
+values ('How to Win Friends and Influence People', 'Dale Carnegie'); 
+
+insert into books (title, author)
+values ('Naruto (manga) Vol 1', 'Masashi Kishimoto'); 
  
 insert into reviews (text, bookId)
-values ('An older book, but still a very good read for priniciple-centered leadership.', 1);
+values ('I started investing because of this book.', 1);
  
 insert into reviews (text, bookId)
-values ('A very old book that expounds on gaining and keeping power; at any and all costs. It was banned by the Pope in 1559.', 2);
+values ('Definitely worth the read!', 2);
+
+insert into reviews (text, bookId)
+values ('My kids love it! Interesting manga about ninjas.', 3);
