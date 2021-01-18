@@ -19,13 +19,19 @@ alter table reviews
   references books (id);
 
 insert into books (title, author)
-values ('The 7 Habits of Highly Effective People', 'Stephen R. Covey');
+values ('The Intelligent Investor', 'Benjamin Graham');
  
 insert into books (title, author)
-values ('The Prince', 'Niccolo Machiavelli'); 
+values ('How to Win Friends and Influence People', 'Dale Carnegie'); 
+
+insert into books (title, author)
+values ('Think and Grow Rich', 'Napoleon Hill'); 
  
 insert into reviews (text, bookId)
-values ('An older book, but still a very good read for priniciple-centered leadership.', 1);
+values ('An intereting book about investing.', 1);
  
 insert into reviews (text, bookId)
-values ('A very old book that expounds on gaining and keeping power; at any and all costs. It was banned by the Pope in 1559.', 2);
+values ('Helpful book about how to build relationships with others.', 2);
+
+insert into reviews (text, bookId)
+values ('Highly recommended! ', 3);
